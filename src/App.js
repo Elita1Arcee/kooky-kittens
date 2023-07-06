@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import SearchBox from './components/search-box/search-box.components';
 import NameList from './components/name-list/name-list.component'
-import logo from './logo.svg';
+import './components/search-box/search-box.component.styles.css'
 import './App.css';
 
 class App extends Component {

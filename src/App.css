@@ -11,9 +11,9 @@ body {
 }
 
 .app-title {
-  font-family: 'Irish Grover';
+  font-family: 'Henny Penny', cursive;
   margin-top: 3rem;
   margin-bottom: 2.5rem;
   font-size: 4rem;
-  color: rgb(237, 253, 253);
+  color: #101010
 }

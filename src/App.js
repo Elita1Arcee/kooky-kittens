@@ -46,7 +46,7 @@ render() {
 
     return (
       <div>
-      <SearchBox className='search-box' placeholder='Find pubs'  onChangeHandler={getInput} />
+      <SearchBox className='search-box' placeholder='Enter name ex.) 16 Stone Brewpub'  onChangeHandler={getInput} />
       <NameList pubs={filteredPubs} />
       </div>
     )

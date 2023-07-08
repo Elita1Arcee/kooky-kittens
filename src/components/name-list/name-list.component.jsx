@@ -1,11 +1,8 @@
-import { Component } from 'react';
+
 import Card from '../card/card.components'
 import './name-list.component.styles.css'
-class NameList extends Component {
 
-    
-    render() {
-        const { pubs } = this.props;
+const NameList = ({ pubs }) => {
 
         return(
             <div className='name-list'>
@@ -13,10 +10,7 @@ class NameList extends Component {
             return <Card key={i} pub={ pub } />;
             })} 
         </div>       
-        ) 
-    }
-
-    
+        )
 
 }
 

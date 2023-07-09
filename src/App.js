@@ -9,14 +9,6 @@ const App = () =>{
   const [pubs, setPubs] = useState([]);
   const [filteredPubs, setFilteredPubs] = useState(pubs);
 
-  //   async componentDidMount(){
-//     try{
-//       const response = await fetch('https://api.openbrewerydb.org/v1/breweries?by_state=new_york&per_page=12');
-//       const pubName = await response.json();
-//       console.log(pubName)
-//       this.setState({pubs: pubName}) 
-//     }
-
   useEffect(() => {
     fetch('https://api.openbrewerydb.org/v1/breweries?by_state=illinois&per_page=12')
       .then((response) => response.json())
@@ -44,48 +36,6 @@ const App = () =>{
     </div>
   )
 }
-
-// class App extends Component {
-//   constructor() {
-//     super();
-
-//     this.state = {
-//       pubs: [],
-//       searchInput: ''
-//     }
-//   }
-
-//   async componentDidMount(){
-//     try{
-//       const response = await fetch('https://api.openbrewerydb.org/v1/breweries?by_state=new_york&per_page=12');
-//       const pubName = await response.json();
-//       console.log(pubName)
-//       this.setState({pubs: pubName}) 
-//     }
-    
-//     catch(err){
-//       console.log(err);
-//     }
-//   };
-
-// render() {
-//   const { pubs, searchInput } = this.state;
-//   const { getInput } = this;
-
-//   const filteredPubs = pubs.filter((pub) =>{
-//     return pub.name.toLocaleLowerCase().includes(searchInput);
-//   })
-
-//     return (
-//       <div>
-//       <SearchBox className='search-box' placeholder='Enter name ex.) 16 Stone Brewpub'  onChangeHandler={getInput} />
-//       <NameList pubs={filteredPubs} />
-//       </div>
-//     )
-//   }
-
-
-// }
   
 
 
